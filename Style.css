@@ -1,0 +1,179 @@
+/* 1. Global Styles: Poore page ka font aur margin set karne ke liye */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: lch(40.04% 46.89 354.57);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* 2. Header Style: Aapka naam aur title center mein accha dikhega */
+header {
+    text-align: center;
+    padding: 20px 0px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+
+    /* Yeh do lines isko perfectly center aur 900px wide rakhengi */
+    max-width: 900px;
+    margin: 0 auto 30px auto; 
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #3b82f6; /* Wahi blue color jo QR generator mein tha */
+    font-weight: 600;
+}
+
+/* 3. Projects Section: Grid layout jisse projects aamne-saamne dikhein */
+#projects {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 20px 0;
+    border-radius: 12px;
+}
+
+#projects h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    border-bottom: 2px solid #0874e0;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* 4. Project Card: QR Code aur Quiz ke dabbo (cards) ka design */
+.project-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Jab card par mouse le jayenge toh wo thoda upar uthega */
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Contact Section Style */
+#contact {
+    text-align: center;
+    padding: 35px 20px;
+    background: #ffffff; /* Isko white hi rakhte hain taaki baki page se match kare */
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-top: 4px solid #3b82f6; /* Top par ek classy blue line */
+}
+
+/* Contact Section Style - Ab exact QR card jaisa dikhega */
+#contact{
+    background: #f2f6f3;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    
+    /* Yeh lines size ko QR card ke barabar block mein rakhengi */
+    max-width: 900px; 
+    margin: 30px auto;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+#contact:hover {
+#contact:focus, #contact:active {
+    outline: none !important;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1) !important;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: left;
+    box-sizing: border-box;
+
+    /* Yeh line upar ki horizontal line ko poori tarah se remove kar degi */
+    border-top: 0px solid transparent !important;
+     
+}
+}
+/* --- QR Code Card ke andar ke texts --- */
+
+/* "QR Code Generator" heading ko badalne ke liye */
+.project-card h3, #projects h3 {
+    font-size: 1.4rem;
+    font-weight: 700 !important; /* Isse text ekdum bold ho jayega */
+    color: #111827 !important;   /* Isse heading ekdum sharp dark black ho jayegi */
+}
+
+/* "A simple QR code generator..." description ko badalne ke liye */
+.project-card p, #projects p {
+    font-size: 1.05rem;
+    font-weight: 600 !important; /* Isse chota text bhi achhe se bold dikhega */
+    color: #374151 !important;   /* Isko thoda dark greyish-black kiya taaki saaf padha jaye */
+}
+
+
+/* --- Lets Connect Card ke andar ke texts --- */
+
+/* "Lets Connect!" heading ko badalne ke liye */
+#contact h3 {
+    font-size: 1.4rem;
+    font-weight: 700 !important; /* Ekdum mast bold */
+    color: #111827 !important;   /* Sharp dark black color */
+}
+
+/* "s77571921@gmail.com" email id ko badalne ke liye */
+.email-text {
+    font-size: 1.15rem;
+    font-weight: 700 !important; /* Isse aapka email ekdum bold chamkega */
+    color: hsl(49, 83%, 53%) !important;   /* Isko ekdum pyara bright blue color de diya taaki eye-catching lage */
+}
+
+header {
+    text-align: center;
+    padding: 20px 0px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    
+    /* Yeh do lines isko perfectly center aur 900px wide rakhengi */
+    max-width: 900px;
+    margin: 0 auto 30px auto; 
+}
+
+/* Dono boxes ka colour ek sath badalne ke liye */
+.project-card, #contact {
+    background-color: hsl(189, 81%, 45%) !important; /* #ffffff ki jagah apna pasandeda colour code dalein */
+}
