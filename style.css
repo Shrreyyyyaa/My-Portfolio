@@ -34,12 +34,6 @@ header h1 {
     margin-bottom: 5px;
 }
 
-header p {
-    font-size: 1.2rem;
-    color: #3b82f6; /* Wahi blue color jo QR generator mein tha */
-    font-weight: 600;
-}
-
 /* 3. Projects Section: Grid layout jisse projects aamne-saamne dikhein */
 #projects {
     max-width: 900px;
